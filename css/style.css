@@ -19,20 +19,20 @@
 .button {
   border: 0;
   padding: 20px 15px;
-  background-image: linear-gradient(to right, blue, red);
+  background: linear-gradient(to right, #1345e6, #ed239f 51%, #1345e6);
+  background-size: 200% 100%;
+  background-position: left;
   border-radius: 5px;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 1s ease;
+  transition: background-position 0.5s ease;
 }
 
 .button:hover {
-  /* color: blue; */
-  background-image: linear-gradient(to right, red, blue);
-  /* outline: 2px solid blue; */
+  background-position: right;
 }
 
 .section__subtile {
@@ -171,7 +171,7 @@ header {
   color: rgb(0, 0, 0);
 }
 
-#main-section>.container>div {
+#main-section > .container > div {
   width: 50%;
   float: left;
 }
@@ -198,7 +198,10 @@ header {
 .statistics-item h3 {
   font-size: 27px;
   margin-bottom: 5px;
-  color: #930ce2;
+  color: transparent;
+  background: linear-gradient(90deg, #1345e6, #ed239f);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .statistics-item p {
@@ -213,7 +216,7 @@ header {
   padding: 140px 0;
 }
 
-#about-me>.container>div {
+#about-me > .container > div {
   width: 50%;
   float: left;
 }
@@ -398,4 +401,29 @@ header {
   position: absolute;
   top: 322px;
   right: 0;
+}
+
+/* Blog */
+.blog-item {
+  background-color: #f8faff;
+  display: inline-block;
+  width: 33.3%;
+  transition: all 0.3s ease;
+}
+
+.thumb {
+  overflow: hidden;
+}
+.thumb img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.blog-item:hover .thumb img {
+  scale: 1.2;
+}
+
+.blog-item:hover {
+  box-shadow: 0 10px 20px #d662091a;
+  background-color: #fff;
 }

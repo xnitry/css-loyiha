@@ -407,8 +407,9 @@ header {
 .blog-item {
   background-color: #f8faff;
   display: inline-block;
-  width: 33.3%;
+  width: 30%;
   transition: all 0.3s ease;
+  margin: 0 10px;
 }
 
 .thumb {
@@ -426,4 +427,67 @@ header {
 .blog-item:hover {
   box-shadow: 0 10px 20px #d662091a;
   background-color: #fff;
+}
+
+.blog-top {
+  margin: 10px 0;
+}
+.blog-top i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #666;
+}
+.blog-top span {
+  display: inline-block;
+  color: #666;
+  margin-right: 30px;
+  transition: all 0.4s ease 0s;
+}
+.blog-top span:hover {
+  color: #1345e6;
+}
+.blog-top i:hover {
+  color: #1345e6;
+}
+
+.blog-details {
+  padding: 32px 30px 37px;
+}
+
+.blog-details h4 {
+  font-weight: 700;
+  color: #05364d;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.blog-details p {
+  color: #797979;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: justify;
+  margin-bottom: 22px;
+}
+
+.blog-details a {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #05364d;
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s ease 0s;
+}
+.blog-details a:hover {
+  color: #ed239f;
+}
+
+.blog-details a::before {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, #1345e6, #ed239f);
+  position: absolute;
+  top: 20px;
+  left: 0;
 }
